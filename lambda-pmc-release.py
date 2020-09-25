@@ -7,21 +7,21 @@ import re
 pmc_prod = {
     'client_id' : '',
     'client_secret' : '',
-    'pmcrm_url' : 'https://pmcrm.beqom.com'
+    'pmcrm_url' : 'https://pmcrm'
 }
 pmc_qa = {
     'client_id' : '',
     'client_secret' : '',
-    'pmcrm_url' : 'https://rm-pmc-qa.beqom.com'
+    'pmcrm_url' : 'https://rm-pmc-qa'
 }
 pmc_test = {
     'client_id' : '',
     'client_secret' : '',
-    'pmcrm_url' : 'https://rm-pmc-test.beqom.com'
+    'pmcrm_url' : 'https://rm-pmc-test'
 }
 
 def get_token(client_id, client_secret):
-    return requests.post('https://passport.beqom.com/api/auth', json={
+    return requests.post('https://passport/api/auth', json={
         'client_id': client_id,
         'client_secret': client_secret,
         })
